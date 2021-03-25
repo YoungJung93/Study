@@ -33,13 +33,13 @@ str += " Collector";
 
 
 
-![Java 메모리_8](..\resources\JAVA\Java 메모리_8.PNG)
+![Java 메모리_8](https://user-images.githubusercontent.com/31823098/112457761-693f3a80-8d9f-11eb-99f8-b80a85684e3d.PNG)
 
 그리고 다음 구문인 `str += " Collector";` 구문에서 문자열 더하기 연산이 수행될 때, 기존에 있던 `"Garbage" ` String 값에 `" Collector"`를 덧붙이는 것이 아니라, 문자열에 대한 더하기 연산이 수행된 결과가 새롭게 Heap 영역에 할당됩니다. 이를 표현하면 아래와 같습니다.
 
 
 
-![Java 메모리_9](..\resources\JAVA\Java 메모리_9.PNG)
+![Java 메모리_9](https://user-images.githubusercontent.com/31823098/112457768-6b08fe00-8d9f-11eb-8a13-ca2972433ab6.PNG)
 
 위처럼 Stack에는 새로운 변수가 할당되지 않습니다. 그저 Heap 영역에 새롭게 `"Garbage Collector"` 가 생성되고, 기존에 `"Garbage"`를 참조하던 Stack 영역의 `str` 변수는 새롭게 생성된 `
 "Garbage Collector"`를 참조하게 됩니다.

@@ -28,9 +28,7 @@
 
 - Java 언어로 개발된 프로그램은 소스 파일을 다시 수정하지 않아도 자바 실행 환경(JRE : Java Runtime Environment)이 설치되어 있는 모든 운영체제에서 실행 가능하다. 따라서 Java 언어는 이식성이 높은 프로그래밍 언어라 할 수 있다.
 
-- ![JAVA_1](https://github.com/YoungJung93/Study/blob/master/resources/JAVA/JAVA_1.png)
-
-  ![JAVA_1](..\resources\JAVA\JAVA_1.png)
+- ![JAVA_1](https://user-images.githubusercontent.com/31823098/112457785-6e9c8500-8d9f-11eb-8ad5-51ce3d1cb0de.png)
 
   예를 들어, C언어의 경우 운영체제의 종류에 따라 int형의 크기가 달라지기도 하지만 Java의 경우는 이런 경우가 없다.(모두 동일한 JVM 환경에서 돌아가기 때문)
 
@@ -70,7 +68,7 @@
 
 위 두 가지를 하기 위해 병렬 처리(=멀티 스레드)가 필요하다.
 
-![JAVA_2](..\resources\JAVA\JAVA_2.png)
+![JAVA_2](https://user-images.githubusercontent.com/31823098/112457794-6fcdb200-8d9f-11eb-89fd-a96713dfd579.png)
 
 운영체제마다 멀티 스레드를 이용하는 API가 다르지만, Java의 경우 Java API를 이용하기 때문에 일관된 생성 및 관리가 가능하다.
 

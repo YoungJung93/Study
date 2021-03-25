@@ -2,7 +2,7 @@
 
 
 
-![TCPIP 4계층_1](..\resources\네트워크\TCPIP 4계층_1.PNG)
+![TCPIP 4계층_1](https://user-images.githubusercontent.com/31823098/112458247-f3879e80-8d9f-11eb-8b67-f70565699cd9.PNG)
 
 - TCP/IP 모형은 현재의 인터넷에서 컴퓨터들이 서로 정보를 주고 받는 데에 쓰이는 통신 규약(프로토콜)의 모음으로 각 계층은 담당하는 위치마다 처리 역할을 구분해 진행함으로 서로 간의 간섭을 최소화하여 사용의 편리성을 높입니다.
 
@@ -52,7 +52,7 @@
 
 ### TCP/IP 계층 별 특징
 
-![TCPIP 4계층_2](..\resources\네트워크\TCPIP 4계층_2.PNG)
+![TCPIP 4계층_2](https://user-images.githubusercontent.com/31823098/112458255-f4b8cb80-8d9f-11eb-8982-d3a210e4ce88.PNG)
 
 - **Layer 4. 응용 계층 (Application Layer)**
 

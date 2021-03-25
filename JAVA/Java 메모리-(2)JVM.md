@@ -6,7 +6,7 @@
 
 
 
-![Java 메모리_5](..\resources\JAVA\Java 메모리_5.PNG)
+![Java 메모리_5](https://user-images.githubusercontent.com/31823098/112457739-63e1f000-8d9f-11eb-80fd-87845d0e1f3c.PNG)
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-![Java 메모리_6](..\resources\JAVA\Java 메모리_6.PNG)
+![Java 메모리_6](https://user-images.githubusercontent.com/31823098/112457747-65abb380-8d9f-11eb-8f15-9112b0bda0d8.PNG)
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-![Java 메모리_7](..\resources\JAVA\Java 메모리_7.PNG)
+![Java 메모리_7](https://user-images.githubusercontent.com/31823098/112457756-67757700-8d9f-11eb-9fe0-2c00d58ba4b5.PNG)
 
 
 

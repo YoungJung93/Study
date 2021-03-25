@@ -2,7 +2,7 @@
 
 
 
-![OSI7계층_1](..\resources\네트워크\OSI7계층_1.PNG)
+![OSI7계층_1](https://user-images.githubusercontent.com/31823098/112458231-eff41780-8d9f-11eb-8022-9ae5e2c79768.PNG)
 
 - OSI(Open Systems Interconnection) 모델은 기본 내부 구조 및 기술에 관계없이, 통신 또는 컴퓨팅 시스템의 통신 기능을 특성화하고 표준화하는 개념적 모델입니다. 그 목표는 표준 프로토콜과 다양한 통신 시스템의 상호 운영성입니다.
 - OSI 모델은 네트워크에서 데이터가 전송되는 방식의 흐름을 모델링하거나 추적하기 위해 IT 전문가가 사용하는 도구입니다. 따라서 OSI 모델은 기본적으로 네트워크 시스템이 서로 데이터를 통신하는 방식에 대한 논리적 모델/표현입니다.
@@ -47,7 +47,7 @@
 
 ### 계층 별 특징
 
-![OSI7계층_2](..\resources\네트워크\OSI7계층_2.PNG)
+![OSI7계층_2](https://user-images.githubusercontent.com/31823098/112458241-f1254480-8d9f-11eb-9b79-a49a532cadbd.PNG)
 
 - Layer 7. 응용 계층 (Application)
   - 사용자 또는 애플리케이션이 네트워크에 접근할 수 있도록 해주는 역할을 합니다.
