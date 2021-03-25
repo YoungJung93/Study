@@ -28,7 +28,7 @@ Program이란 파일이 저장 장치에 저장되어 있지만, 메모리에는
 
 
 
-![Process와Thread_1](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\운영체제\Process와Thread_1.PNG)
+![Process와Thread_1](..\resources\운영체제\Process와Thread_1.PNG)
 
 - **프로세스의 특징**
 
@@ -56,7 +56,7 @@ Program이란 파일이 저장 장치에 저장되어 있지만, 메모리에는
 
 
 
-![Process와Thread_2](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\운영체제\Process와Thread_2.PNG)
+![Process와Thread_2](..\resources\운영체제\Process와Thread_2.PNG)
 
 - **스레드가 생긴 배경**
 
@@ -141,7 +141,7 @@ Program이란 파일이 저장 장치에 저장되어 있지만, 메모리에는
 
   - 쉽게 설명하면, 프로그램을 여러 개 키는 것보다 하나의 프로그램 안에서 여러 작업을 해결하는 것입니다.
 
-    ![Process와Thread_3](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\운영체제\Process와Thread_3.PNG)
+    ![Process와Thread_3](..\resources\운영체제\Process와Thread_3.PNG)
 
 - 멀티 프로세스로 할 수 있는 작업들을 하나의 프로세스에서 여러 스레드로 나누어 하는 이유?
 

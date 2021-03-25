@@ -2,7 +2,7 @@
 
 
 
-![TCP와 UDP_1](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_1.PNG)
+![TCP와 UDP_1](..\resources\네트워크\TCP와 UDP_1.PNG)
 
 - TCP와 UDP는 OSI 표준 모델과 TCP/IP 모델의 전송 계층에서 사용되는 프로토콜입니다. 전송 계층은 송신자와 수신자를 연결하는 통신 서비스를 제공하고 IP에 의해 전달되는 패킷의 오류를 검사하며 재전송 요구 제어 등을 담당하는 계층입니다. 쉽게 말해 데이터의 전달을 담당한다고 생각하면 됩니다. TCP와 UDP는 포트 번호를 이용하여 주소릴 지정하는 것과 데이터 오류 검사를 위한 CheckSum이 존재한다는 두 가지 공통점을 가지고 있지만 정확성(TCP)을 추구할지 신속성(UDP)을 추구할지 구분하여 나뉩니다.
 
@@ -18,7 +18,7 @@
 
 ### TCP (Transmission Control Protocol)
 
-![TCP와 UDP_2](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_2.PNG)
+![TCP와 UDP_2](..\resources\네트워크\TCP와 UDP_2.PNG)
 
 - TCP는 연결 지향적 프로토콜입니다. 연결 지향 프로토콜이란 클라이언트와 서버가 연결된 상태에서 데이터를 주고 받는 프로토콜을 의미합니다. 클라이언트가 연결 요청(SYN 데이터 전송)을 하고, 서버가 연결을 수락하면 통신 선로가 고정되고, 모든 데이터는 고정된 통신 선로를 통해서 순차적으로 전달됩니다. 그렇기 때문에 TCP는 데이터를 정확하고 안정적으로 전달할 수 있습니다. TCP는 호스트 간 신뢰성 있는 데이터 전달과 흐름 제어를 합니다. TCP 프로토콜은 신뢰성 있는 데이터의 전송을 위해 확인 작업을 거치는데, TCP는 패킷을 성공적으로 전송하면 ACK라는 신호를 날리고, 만약에 ACK 신호가 제시간에 도착하지 않으면 Timeout이 발생하여 패킷 손실이 발생한 패킷을 다시 전송해줍니다. TCP는 이렇게 데이터를 송신할 때마다 확인 응답을 주고 받는 절차가 있으므로 통신의 신뢰성이 올라갑니다. 주로 Client와 Server 또는 P2P Socket 통신 등 네트워크를 사용한 통신을 할 때 TCP 통신을 많이 사용합니다.
 
@@ -58,7 +58,7 @@
 
 - **3-way handshaking 방식(SYN, ACK)**
 
-  ![TCP와 UDP_3](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_3.PNG)
+  ![TCP와 UDP_3](..\resources\네트워크\TCP와 UDP_3.PNG)
 
   - TCP 통신을 위한 네트워크 연결은 3-way handshaking 이라는 방식으로 연결됩니다. 3-way handshaking 방식은 서로의 통신을 위한 관문(port)을 확인하고 연결하기 위해 3번의 요청/응답 후에 연결이 되는 것을 말합니다. (이 과정에서 가장 많은 시간이 소요되어 UDP 방식보다 속도가 느려지는 주요 원인으로 지목됩니다.)
 
@@ -76,7 +76,7 @@
 
 - **4-way handshaking 방식(FIN, ACK)**
 
-  ![TCP와 UDP_4](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_4.PNG)
+  ![TCP와 UDP_4](..\resources\네트워크\TCP와 UDP_4.PNG)
 
   - 4-way handshaking은 클라이언트와 서버의 통신을 종료하기 위해 4번의 요청/응답이 일어나는 과정을 말합니다.
 
@@ -120,7 +120,7 @@
 
 - **TCP 헤더 정보**
 
-  ![TCP와 UDP_5](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_5.PNG)
+  ![TCP와 UDP_5](..\resources\네트워크\TCP와 UDP_5.PNG)
 
 | 필드                               | 크기 | 내용                                                         |
 | :--------------------------------- | :--: | :----------------------------------------------------------- |
@@ -161,7 +161,7 @@
 
 - **TCP Flow**
 
-  ![TCP와 UDP_7](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_7.PNG)
+  ![TCP와 UDP_7](..\resources\네트워크\TCP와 UDP_7.PNG)
 
 
 
@@ -169,7 +169,7 @@
 
 ### UDP(User Datagram Protocol)
 
-![TCP와 UDP_6](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_6.PNG)
+![TCP와 UDP_6](..\resources\네트워크\TCP와 UDP_6.PNG)
 
 - UDP는 전송 계층의 비연결 지향적 프로토콜입니다. 비연결 지향적이란 데이터를 주고 받을 때, 연결 절차를 거치지 않고 발신자가 일방적으로 데이터를 발신하는 방식을 의미합니다. 연결 과정이 없기 때문에 TCP보다 빠른 전송을 할 수 있지만, 데이터 전달의 신뢰성은 떨어집니다. UDP는 발신자가 데이터 패킷을 순차적으로 보내더라도 이 패킷들은 서로 다른 통신 선로를 통해 전달될 수 있습니다. 먼저 보낸 패킷이 느린 선로를 통해 전송될 경우, 나중에 보낸 패킷보다 늦게 도착할 수 있으며 최악의 경우 잘못된 선로로 전송되어 유실될 수도 있습니다. 이럴 경우 TCP와는 다르게 UDP는 중간에 패킷이 유실되거나 변조되어도 재전송을 하지 않습니다.
 - UDP는 비연결형 서비스이기 때문에, 연결을 설정하고 해제하는 과정이 존재하지 않습니다. 서로 다른 경로로 독립적으로 처리하는데도 패킷에 순서를 부여하여 재조립을 하거나 흐름 제어 또는 혼잡 제어와 같은 기능도 처리하지 않기 때문에 TCP 보다 속도가 빠르며 네트워크 부하가 적다는 장점이 있지만, 신뢰성있는 데이터의 전송을 보장하지는 못합니다. 그렇기 때문에 `신뢰성보다는 연속성이 중요한 서비스`, 예를 들면 실시간 서비스(Streaming)에 자주 사용됩니다.
@@ -225,7 +225,7 @@
 
 - **UDP Flow**
 
-  ![TCP와 UDP_8](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\네트워크\TCP와 UDP_8.PNG)
+  ![TCP와 UDP_8](..\resources\네트워크\TCP와 UDP_8.PNG)
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-![Java 메모리_5](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_5.PNG)
+![Java 메모리_5](..\resources\JAVA\Java 메모리_5.PNG)
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-![Java 메모리_6](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_6.PNG)
+![Java 메모리_6](..\resources\JAVA\Java 메모리_6.PNG)
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-![Java 메모리_7](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_7.PNG)
+![Java 메모리_7](..\resources\JAVA\Java 메모리_7.PNG)
 
 
 

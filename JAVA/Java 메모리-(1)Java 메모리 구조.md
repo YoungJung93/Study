@@ -73,13 +73,13 @@ public class Main {
 
 이 코드에서 Stack 상태는 아래와 같습니다.
 
-![Java 메모리_1](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_1.PNG)
+![Java 메모리_1](..\resources\JAVA\Java 메모리_1.PNG)
 
 이 상태는 calculate() 메서드가 호출되었을 때이며, calculate() 메서드가 결과 값을 return 하게 되면 이 메서드에서 사용한 tmp와 newData 값은 Stack에서 pop됩니다.
 
 따라서 결국엔 calculate() 메서드에서 return된 newData의 값 20이 val에 새롭게 저장되어 아래와 같은 Stack 상태가 됩니다.
 
-![Java 메모리_2](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_2.PNG)
+![Java 메모리_2](..\resources\JAVA\Java 메모리_2.PNG)
 
 또한, val과 args는 main() 메서드 안에 존재하는 값이므로, main() 메서드가 종료되는 시점에 모든 값이 Stack에서 pop되어 Stack은 완전히 비게 됩니다.
 
@@ -120,7 +120,7 @@ String str = "java";
 
 
 
-![Java 메모리_3](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_3.PNG)
+![Java 메모리_3](..\resources\JAVA\Java 메모리_3.PNG)
 
 ```java
 public class Main {
@@ -135,7 +135,7 @@ public class Main {
 
 좀 더 복잡한 위의 코드로 Java 메모리 할당 과정을 알아보겠습니다.
 
-![Java 메모리_4](C:\Users\tnfl4\OneDrive\Desktop\취업 스터디\CS정리\res\JAVA\Java 메모리_4.PNG)
+![Java 메모리_4](..\resources\JAVA\Java 메모리_4.PNG)
 
 
 
