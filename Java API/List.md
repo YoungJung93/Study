@@ -240,94 +240,252 @@ boolean addAll(int index, Collection <? extends E> c)
 
 
 
-##### **`size`**
+##### **`removeAll`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
+boolean removeAll(Collection <? > c)
+    // 지정된 컬렉션에 포함된 모든 요소를 이 리스트에서 삭제합니다(선택 작업).
     Specified by
-    	인터페이스 Collection <E> 내의 size
+    	인터페이스 Collection <E> 내의 removeAll
+    Parameters
+    	c - 이 리스트에서 제거될 요소를 포함하는 컬렉션
     Returns
-    	리스트 내의 요소 수
+    	이 호출의 결과, 이 리스트가 변경되었을 경우 true
+    Exceptions
+    	UnsupportedOperationException - 리스트가 removeAll 메서드를 지원하고 있지 않은 경우
+    	ClassCastException - 이 리스트의 요소 클래스가 지정된 컬렉션과 호환되지 않는 경우(선택 사항)
+    	NullPointerException - 이 리스트에 하나 이상의 null 요소가 포함되어 있고 지정된 컬렉션이
+    							null 요소를 지원하지 않는 경우 또는 지정된 컬렉션이 null인 경우
+    References
+    	remove(Object), contains(Object)
 ```
 
 
 
-##### **`size`**
+##### **`retainAll`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
+boolean retailAll(Collection <? > c)
+    // 지정된 컬렉션에 포함되어 있는 요소만 이 리스트에 유지됩니다(선택 작업). 즉, 지정된 컬렉션에 포함되지 않은 모든 요소를 이 리스트에서 삭제합니다.
     Specified by
-    	인터페이스 Collection <E> 내의 size
+    	인터페이스 Collection <E> 내의 retainAll
+    Parameters
+    	c - 이 리스트에 유지할 요소를 포함하는 컬렉션
     Returns
-    	리스트 내의 요소 수
+    	이 호출의 결과, 이 리스트가 변경되었을 경우 true
+    Exceptions
+    	UnsupportedOperationException - 리스트가 retainAll 메서드를 지원하고 있지 않은 경우
+    	ClassCastException - 이 리스트의 요소 클래스가 지정된 컬렉션과 호환되지 않는 경우(선택 사항)
+    	NullPointerException - 이 리스트에 하나 이상의 null 요소가 포함되어 있고 지정된 컬렉션이
+    							null 요소를 지원하지 않는 경우 또는 지정된 컬렉션이 null인 경우
 ```
 
 
 
-##### **`size`**
+##### **`clear`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
+void clear()
+    // 모든 요소를 리스트로부터 삭제합니다(선택 작업). 이 호출이 반환되면 리스트는 비어 있게 됩니다.(예외를 Throw 했을 경우 제외)
     Specified by
-    	인터페이스 Collection <E> 내의 size
-    Returns
-    	리스트 내의 요소 수
+    	인터페이스 Collection <E> 내의 clear
+    Exceptions
+    	UnsupportedOperationException - 리스트가 clear 메서드를 지원하고 있지 않은 경우
 ```
 
 
 
-##### **`size`**
+##### **`equals`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
+boolean equals(Object o)
+    // 지정된 객체와 이 리스트가 같은지 비교합니다. 지정된 객체가 리스트이고 두 리스트의 사이즈가 같으며 두 리스트의 대응하는 요소가 모두 동등할 경우에만 true를 리턴합니다. 2개의 요소 e1과 e2는 (e1==null ? e2==null : e1.equals(e2))인 경우에 동등합니다. 즉, 두 리스트는 같은 요소가 같은 순서로 포함되어 있는 경우에 동등한 것으로 정의됩니다. 이 정의에 의해 List 인터페이스의 구현이 달라도, equals 메소드가 올바르게 작동하는 것이 보증됩니다.
     Specified by
-    	인터페이스 Collection <E> 내의 size
+    	인터페이스 Collection <E> 내의 equals
+    Overrides
+    	클래스 Object 내의 equals
+    Parameters
+    	o - 이 리스트와 동등한지 비교할 객체
     Returns
-    	리스트 내의 요소 수
+    	지정된 객체가 이 리스트와 동등할 경우 true
+    References
+    	Object.hashCode(), Hashtable
 ```
 
 
 
-##### **`size`**
+##### **`hashCode`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
+int hashCode()
+    // 이 리스트의 해시 코드 값을 리턴합니다. 리스트의 해시 코드는 다음 계산의 결과로서 정의됩니다.
+    /*
+    	int hashCode = 1;
+    	for(E e : list) {
+    		hashCode = 31 * hashCode + (e==null ? 0 : e.hashCode());
+    	}
+    */
+    // 이는 list1.equals(list2)가 Object.hashCode()의 일반 규약에서 요구하는대로, 두 리스트 list1 및 list2에 대해 list1.hashCode()==list2.hashCode()를 의미함을 보장합니다.
     Specified by
-    	인터페이스 Collection <E> 내의 size
+    	인터페이스 Collection <E> 내의 hashCode
+    Overrides
+    	클래스 Object 내의 hashCode
     Returns
-    	리스트 내의 요소 수
+    	리스트의 해시 코드 값
+    References
+    	Object.hashCode(), Object.equals(Object), equals(Object)
 ```
 
 
 
-##### **`size`**
+##### **`get`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
-    Specified by
-    	인터페이스 Collection <E> 내의 size
+E get(int index)
+    // 리스트 내의 지정된 위치(index)에 있는 요소를 리턴합니다.
+    Parameters
+    	index - 리턴될 요소의 인덱스
     Returns
-    	리스트 내의 요소 수
+    	리스트 내의 지정된 위치에 있는 요소
+    Exceptions
+    	IndexOutOfBoundsException - 인덱스가 범위 외일 경우(index < 0 || index >= size())
 ```
 
 
 
-##### **`size`**
+##### **`set`**
 
 ```java
-int size()
-    // 리스트 내의 요소 수를 리턴합니다. 이 리스트에 Integer.MAX_VALUE 보다 많은 수의 요소가 있는 경우, Integer.MAX_VALUE를 리턴합니다.
-    Specified by
-    	인터페이스 Collection <E> 내의 size
+E set(int index, E element)
+    // 리스트 내의 지정된 위치(index)에 있는 요소를 지정된 요소로 대체합니다.
+    Parameters
+    	index - 대체될 요소의 인덱스
+    	element - 지정된 위치에 저장될 요소
     Returns
-    	리스트 내의 요소 수
+    	지정된 위치에 이전에 있던 요소
+    Exceptions
+    	UnsupportedOperationException - 리스트가 set 메서드를 지원 하고 있지 않는 경우
+		ClassCastException - 지정된 요소의 클래스가 이 리스트와 호환되지 않는 경우
+		NullPointerException - 지정된 요소가 null이고, 이 리스트가 null 요소를 허용하지 않는 경우
+		IllegalArgumentException - 지정된 요소의 일부 속성으로 인해 이 리스트에 추가되지 않는 경우
+		IndexOutOfBoundsException - 인덱스가 범위 외일 경우 (index < 0 || index >= size())
 ```
 
 
+
+##### **`add`**
+
+```java
+void add(int index, E element)
+    // 리스트 내의 지정된 위치(index)에 지정된 요소(element)를 삽입합니다. 현재 그 위치에 있는 요소와 그 뒤의 요소는 오른쪽으로 1칸씩 이동합니다.
+    Parameters
+    	index - 지정된 요소가 삽입될 인덱스
+    	element - 삽입될 요소
+    Exceptions
+    	UnsupportedOperationException - 리스트가 add 메서드를 지원 하고 있지 않는 경우
+		ClassCastException - 지정된 요소의 클래스가 이 리스트와 호환되지 않는 경우
+		NullPointerException - 지정된 요소가 null이고, 이 리스트가 null 요소를 허용하지 않는 경우
+		IllegalArgumentException - 지정된 요소의 일부 속성으로 인해 이 리스트에 추가되지 않는 경우
+		IndexOutOfBoundsException - 인덱스가 범위 외일 경우 (index < 0 || index > size())
+```
+
+
+
+##### **`remove`**
+
+```java
+E remove(int index)
+    // 리스트 내의 지정된 위치(index)에 있는 요소를 삭제합니다. 뒤의 요소들은 왼쪽으로 1칸씩 이동합니다. 이 리스트로부터 삭제된 요소가 리턴됩니다.
+    Parameters
+    	index - 삭제될 요소의 인덱스
+    Returns
+    	지정된 위치에 이전에 있던 요소
+    Exceptions
+    	UnsupportedOperationException - 리스트가 remove 메서드를 지원 하고 있지 않는 경우
+    	IndexOutOfBoundsException - 인덱스가 범위 외일 경우(index < 0 || index >= size())
+```
+
+
+
+##### **`indexOf`**
+
+```java
+int indexOf(Object o)
+    // 이 리스트에서 지정된 요소(o)가 처음으로 검출되는 위치의 인덱스를 리턴합니다. 리스트에 지정된 요소가 포함되지 않은 경우 -1을 리턴합니다. 즉, (o==null ? get(i)==null : o.equals(get(i)))를 만족하는 가장 낮은 인덱스 i를 리턴하거나 그러한 인덱스가 없는 경우 -1을 리턴합니다.
+    Parameters
+    	o - 리스트에서 검색할 요소
+    Returns
+    	지정된 요소가 리스트 내에서 최초로 검출되는 위치의 인덱스. 리스트에 요소가 없을 경우 -1
+    Exceptions
+    	ClassCastException - 지정된 요소의 클래스가 이 리스트와 호환되지 않는 경우
+    	NullPointerException - 지정된 요소가 null이고, 이 리스트가 null 요소를 허용하지 않는 경우
+```
+
+
+
+##### **`lastIndexOf`**
+
+```java
+int lastIndexOf(Object o)
+    // 이 리스트에서 지정된 요소(o)가 마지막으로 검출되는 위치의 인덱스를 리턴합니다. 리스트에 지정된 요소가 포함되지 않은 경우 -1을 리턴합니다. 즉, (o==null ? get(i)==null : o.equals(get(i)))를 만족하는 가장 높은 인덱스 i를 리턴하거나 그러한 인덱스가 없는 경우 -1을 리턴합니다.
+    Parameters
+    	index - 리스트에서 검색할 요소
+    Returns
+    	지정된 요소가 리스트 내에서 마지막으로 검출되는 위치의 인덱스. 리스트에 요소가 없을 경우 -1
+    Exceptions
+    	ClassCastException - 지정된 요소의 클래스가 이 리스트와 호환되지 않는 경우
+    	NullPointerException - 지정된 요소가 null이고, 이 리스트가 null 요소를 허용하지 않는 경우
+```
+
+
+
+##### **`listIterator`**
+
+```java
+ListIterator <E> listIterator()
+    // 리스트 내의 모든 요소를 적절한 순서로 반복 처리하는 반복자를 리턴합니다.
+    Returns
+    	리스트 내의 요소를 적절한 순서로 반복 처리하는 반복자
+    
+ListIterator <E> listIterator(int index)
+    // 리스트 내의 지정된 위치부터의 요소를 적절한 순서로 반복 처리하는 반복자를 리턴합니다. 지정된 인덱스는 next 메소드의 최초 호출에 의해 리턴된 최초의 요소를 나타냅니다. previous 메소드의 최초 호출은 지정된 인덱스에서 1을 뺀 인덱스의 요소를 리턴합니다.
+    Parameters
+    	index - next 메소드의 호출에 의해 리스트 반복자로부터 리턴된 최초 요소의 인덱스
+    Returns
+    	리스트 내의 지정된 위치부터의 요소를 적절한 순서로 반복 처리하는 반복자
+    Exceptions
+    	IndexOutOfBoundsException - 인덱스가 범위 외일 경우(index < 0 || index > size())
+```
+
+
+
+##### **`subList`**
+
+```java
+List<E> subList(int fromIndex, int toIndex)
+    // 이 리스트의 fromIndex(포함)로부터 toIndex(비포함) 범위의 서브 리스트를 리턴합니다. fromIndex와 toIndex가 같을 경우, 빈 리스트를 리턴합니다. 리턴된 리스트는 이 리스트에 대응되고 있으므로 리턴된 리스트 내의 비구조적 변경은 이 리스트에 반영되며 그 반대의 경우도 마찬가지입니다. 리턴된 리스트는 이 리스트에 의해 지원되고 있는 모든 리스트에 관련된 옵션의 오퍼레이션을 모두 지원합니다.
+    // 이 메소드는 명시적 범위 연산(배열에 일반적으로 존재하는 정렬)이 필요하지 않습니다. 리스트가 필요한 모든 작업은 전체 리스트 대신 서브 리스트를 사용하여 범위 조작으로서 사용할 수 있습니다. 예를 들어, 다음 관용구는 리스트로부터 지정된 범위의 요소를 삭제합니다.
+    /*
+    	list.subList(from, to).clear();
+    */
+    // indexOf 및 lastIndexOf 메소드에서도 유사한 관용구를 작성할 수 있습니다. Collections 클래스의 모든 알고리즘을 subList에 적용할 수 있습니다.
+    // 이 리스트의 구조가 리턴된 리스트를 통하지 않고 변경되었을 경우, 이 메소드로 리턴된 리스트의 의미는 보장되지 않습니다. 구조의 변경이란 리스트의 사이즈가 변경되거나, 진행 중인 반복 처리가 잘못된 결과를 생성할 수 있는 방식으로 끝나는 것을 의미합니다.
+    Parameters
+    	fromIndex - 리턴될 서브 리스트의 시작점(포함)
+    	toIndex - 리턴될 서브 리스트의 끝점(비포함)
+    Returns
+    	이 리스트 내의 지정된 범위의 서브 리스트
+    Exceptions
+    	IndexOutOfBoundsException - 인덱스가 부정한 값일 경우
+    							(fromIndex < 0 || toIndex > size || fromIndex > toIndex)
+```
+
+
+
+
+
+> 출처
+
+- https://docs.oracle.com/javase/8/docs/api/index.html
+- http://cris.joongbu.ac.kr/course/java/api/java/util/List.html
 
