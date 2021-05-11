@@ -622,18 +622,60 @@ public static <K,V> SortedMap <K,V> synchronizedSortedMap(SortedMap <K,V> m)
 
 
 
-##### **`checkedCollection`**
+##### **`frequency`**
 
 ```java
-public static <E> Collection <E> checkedCollection(Collection <E> c, Class <E> type)
-    // 
+public static int frequency(Collection <?> c, Object o)
+    // 지정된 컬렉션 내에서 지정된 객체와 동일한 요소의 수를 리턴합니다. 즉, (o==null ? e==null : o.equals(e))를 만족하는 컬렉션 내의 요소 e의 갯수를 리턴합니다.
     Parameters
-    	c - 동기화된 컬렉션에서 "Wrapping" 될 컬렉션
+    	c - 지정된 객체(o)의 빈도를 판단할 컬렉션
+    	o - 빈도를 판단할 객체
     Returns
-    	지정된 컬렉션의 동기화된 뷰
+    	지정된 컬렉션(c) 내에 지정된 객체(o)와 동일한 요소의 수
+    Exceptions
+    	NullPointerException - c가 null인 경우
+    Since Version
+    	1.5
 ```
 
 
+
+##### **`disjoint`**
+
+```java
+public static boolean disjoint(Collection <?> c1, Collection <?> c2)
+    // 지정된 2개의 컬렉션에 공통의 요소가 존재하지 않는 경우 true를 리턴합니다.
+    Parameters
+    	c1 - 공통의 요소가 존재하는지 판단할 컬렉션
+    	c2 - 공통의 요소가 존재하는지 판단할 컬렉션
+    Returns
+    	지정된 두 컬렉션에 공통 요소가 존재하지 않으면 true
+    Exceptions
+    	NullPointerException - (c1 == null || c2 == null)인 경우
+    Since Version
+    	1.5
+```
+
+
+
+##### **`addAll`**
+
+```java
+public static <T> boolean addAll(Collection <? super T> c, T... a)
+    // 지정된 모든 요소(a)가 지정된 컬렉션(c)에 삽입됩니다. 이 메소드의 동작은 c.addAll(Arrays.asList(element))와 동일하지만, 대부분의 구현에서 더 빠르게 실행됩니다.
+    Parameters
+    	c - 지정된 요소를 삽입할 컬렉션
+    	a - 지정된 컬렉션에 삽입될 요소들
+    Returns
+    	이 호출의 결과, 컬렉션이 변경되었을 경우 true
+    Exceptions
+    	UnsupportedOperationException - 지정된 컬렉션이 add 메소드를 지원하지 않는 경우
+    	NullPointerException - 지정된 요소(a) 중, 1개 이상의 null 요소가 포함되어 있고, 지정된 컬
+렉션이 null 요소를 지원하지 않는 경우. 또는 지정된 컬렉션 혹은 요소가 null인 경우
+    	IllegalArgumentException - 지정된 요소의 일부 속성으로 인해 이 컬렉션에 추가할 수 없는 경우
+    Since Version
+    	1.5
+```
 
 
 
